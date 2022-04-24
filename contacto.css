@@ -1,0 +1,312 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+h4{
+    font-size: 20px;
+   
+    color: white;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	background-color: black;
+	z-index: 2;
+	width: 100%;
+	height: 15%;
+  }
+  
+  nav img{
+	  width: 50px;
+  }
+  .navlinks{
+	  flex: 1;
+	  text-align: right;
+	  z-index: 2;
+	  
+  
+  }
+  .navlinks ul li.dropdown ul{
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	padding-left: 0;
+	min-width: 40%;
+	display: none;
+	padding: 15%;
+	margin-top: 10%;
+	
+  }
+  .navlinks ul li.dropdown ul li a{
+	color: #000;
+	width: 40%;
+	font-size: 12px;
+	text-align: center;
+	padding-right: 10%;
+	margin-top: 10%;
+  }
+  
+  .navlinks ul li.dropdown:hover ul{
+	display: block;
+  }
+  .navlinks ul li{
+	  list-style: none;
+	  display: inline-block;
+	  
+	  position: relative;
+	  
+	  
+  }
+  .navlinks ul li a:hover{
+	margin: 20%;
+	  background-color: orange;
+	  
+  }
+  
+  .navlinks ul li a{
+	  color: white;
+	  text-decoration: none;
+	  font-size: 18px;
+	  transition: all ease 0.3s;
+	  padding: 15px;
+	  letter-spacing: 0.5px;
+	  
+	  
+  }
+  
+.mapa{
+	margin-top: 7%;
+	margin-bottom: 3%;
+
+}
+.container{
+	top:65%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 5% 20%;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("https://www.elagoradiario.com/wp-content/uploads/2020/09/cambio-clim%C3%A1tico-tiempo-1140x600.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("https://images.ecestaticos.com/2FShBufrTS6yY3U5D1XEB1NTnbw=/273x13:2119x1397/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F6ce%2Fa4e%2Fd7b%2F6cea4ed7b4b57f09a9f05976dbdf832e.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.submit{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+.telefono p{
+	position: relative;
+display: inline-block;
+	justify-content: center;
+	top: 30%;
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+.footer {
+	width: 100%;
+	  
+	position: absolute;
+	height: auto;
+	top: 215%;
+	background-color: #070617;
+	
+  }
+  .footer .col {
+	width: 190px;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 17px;
+	padding: 20px 0px 5px 0px;
+	color: rgba(255,255,255,0.2);
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  .footer .col ul li {
+	color: #999999;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: bold;
+	padding: 5px 0px 5px 0px;
+	cursor: pointer;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+  }
+  .social ul li {
+	display: inline-block;
+	padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+	color: #ffffff;
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+  }
+  .clearfix {
+	clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+	.contain {
+	  width: 1200px;
+	  margin: 0 auto;
+	}
+  }
+  @media only screen and (max-width: 1139px) {
+	.contain .social {
+	  width: 1000px;
+	  display: block;
+	}
+	.social h1 {
+	  margin: 0px;
+	}
+  }
+  @media only screen and (max-width: 950px) {
+	.footer .col {
+	  width: 33%;
+	}
+	.footer .col h1 {
+	  font-size: 14px;
+	}
+	.footer .col ul li {
+	  font-size: 13px;
+	}
+  }
+  @media only screen and (max-width: 500px) {
+	  .footer .col {
+		width: 50%;
+	  }
+	  .footer .col h1 {
+		font-size: 14px;
+	  }
+	  .footer .col ul li {
+		font-size: 13px;
+	  }
+  }
+  @media only screen and (max-width: 340px) {
+	.footer .col {
+	  width: 100%;
+	}
+  }
+  
